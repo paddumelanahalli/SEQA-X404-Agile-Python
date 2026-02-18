@@ -62,5 +62,14 @@ class Account:
     -50,        # negative withdrawal
     0,          # zero amount
 ]
+
+Category 2: Boundary Cases
+Test	Expected
+withdraw(balance)	Allowed
+withdraw(balance + 0.01)	Fail
+deposit(0)	Fail
+withdraw(0)	Fail
+
+
     '''
 
